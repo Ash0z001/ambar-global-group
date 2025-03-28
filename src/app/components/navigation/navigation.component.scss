@@ -1,44 +1,47 @@
-
 .navbar {
-    background-color:black;
+    background-color: black;
+
     .navbar-brand,
     .nav-link {
-      display: flex;
-      justify-content: space-between;
-      color: white;
-  
-    .nav-link {
-      color: #d3820c;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+
+        .nav-link {
+            color: #d3820c;
+        }
+
+        .navbar-toggler {
+            border-color: white;
+        }
+
+        .navbar-toggler-icon {
+            filter: invert(1);
+        }
     }
-  
-    .navbar-toggler {
-      border-color: white;
-    }
-  
-    .navbar-toggler-icon {
-      filter: invert(1);
-    }
-  }
 }
+
 .navbar-nav {
     .nav-item {
-      a.nav-link {
-        color: white;
-        &:hover {
-          color: #ffcc00;
+        a.nav-link {
+            color: white;
+
+            &:hover {
+                color: #ffcc00;
+            }
         }
-      }
     }
-  }
-  .hover-underline {
+}
+
+.hover-underline {
     font-size: 2rem;
     color: #ffffff;
     position: relative;
     display: inline-block;
-  }
-  
-  .hover-underline::after,
-  .hover-underline::before {
+}
+
+.hover-underline::after,
+.hover-underline::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -49,15 +52,14 @@
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.4s ease-out;
-  }
-  
-  .hover-underline::before {
+}
+
+.hover-underline::before {
     top: -5px;
     transform-origin: left;
-  }
-  
-  .hover-underline:hover::after,
-  .hover-underline:hover::before {
+}
+
+.hover-underline:hover::after,
+.hover-underline:hover::before {
     transform: scaleX(1);
-  }
-  
+}
