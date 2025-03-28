@@ -1,1 +1,14 @@
-<p>banner works!</p>
+<section class="banner d-flex align-items-center position-relative" style="background-image: url({{ image }});">
+  <div class="banner__overlay position-absolute start-0 top-0 w-100 h-100"></div>
+  <div class="container z-2">
+    <div class="row">
+      <div class="col-12">
+        <div class="banner__content text-center text-white" data-aos="slide-right">
+          <h1 class="mb-4" *ngIf="title">{{ title }}</h1>
+          <p class="mb-4" *ngIf="description">{{ description }}</p>
+          <a *ngIf="buttonText" [routerLink]="buttonLink" class="btn btn-primary">{{ buttonText }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
