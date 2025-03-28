@@ -1,0 +1,36 @@
+.get-in-touch {
+  height: 450px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__lets-talk {
+    border-bottom: 2px solid;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (min-width: 1024px) {
+     font-size: 70px;
+    }
+
+    i {
+      font-size: 90px;
+      line-height: 0;
+      margin-bottom: -20px;
+
+      @media (min-width: 1024px) {
+        font-size: 200px;
+        margin-bottom: -50px;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
