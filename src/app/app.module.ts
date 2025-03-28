@@ -15,6 +15,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { environment } from 'src/environments/environment';
+import { BannerComponent } from './components/banner/banner.component';
+import { GetInTouchComponent } from './components/get-in-touch/get-in-touch.component';
+import { IconCardComponent } from './components/icon-card/icon-card.component';
+import { PartnersLogosComponent } from './components/partners-logos/partners-logos.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { environment } from 'src/environments/environment';
     FooterComponent,
     HomeComponent,
     ContactComponent,
-    ServicesComponent
+    ServicesComponent,
+    BannerComponent,
+    GetInTouchComponent,
+    IconCardComponent,
+    PartnersLogosComponent
   ],
   imports: [
     BrowserModule,
