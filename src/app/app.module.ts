@@ -19,6 +19,8 @@ import { BannerComponent } from './components/banner/banner.component';
 import { GetInTouchComponent } from './components/get-in-touch/get-in-touch.component';
 import { IconCardComponent } from './components/icon-card/icon-card.component';
 import { PartnersLogosComponent } from './components/partners-logos/partners-logos.component';
+import { TwoColumnIconsComponent } from './components/two-column-icons/two-column-icons.component';
+import { ParallaxBannerComponent } from './components/parallax-banner/parallax-banner.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { PartnersLogosComponent } from './components/partners-logos/partners-log
     BannerComponent,
     GetInTouchComponent,
     IconCardComponent,
-    PartnersLogosComponent
+    PartnersLogosComponent,
+    TwoColumnIconsComponent,
+    ParallaxBannerComponent
   ],
   imports: [
     BrowserModule,
