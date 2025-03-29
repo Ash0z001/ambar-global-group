@@ -23,6 +23,7 @@ import { TwoColumnIconsComponent } from './components/two-column-icons/two-colum
 import { ParallaxBannerComponent } from './components/parallax-banner/parallax-banner.component';
 import { TwoColumnTextComponent } from './components/two-column-text/two-column-text.component';
 import { SingleColumnTextComponent } from './components/single-column-text/single-column-text.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { SingleColumnTextComponent } from './components/single-column-text/singl
     TwoColumnIconsComponent,
     ParallaxBannerComponent,
     TwoColumnTextComponent,
-    SingleColumnTextComponent
+    SingleColumnTextComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,

@@ -10,7 +10,7 @@ body {
 }
 
 .btn {
-  border-radius: 0;
+  border-radius: 0 !important;
 
   &.btn-primary {
     background-color: $primary;

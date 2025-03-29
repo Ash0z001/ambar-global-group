@@ -1,0 +1,81 @@
+<section class="contact-form spacing">
+  <form (submit)="emailApi($event)">
+    <div class="container">
+      <div class="row text-center mb-4">
+        <div class="col-12">
+          <h2 class="contact__title">Get in Touch with us</h2>
+          <p class="contact__description">We Would Like To Hear From You</p>
+        </div>
+      </div>
+
+      <!-- Name and Surname -->
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Name" aria-label="Name"
+              aria-describedby="basic-addon1">
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Surname" aria-label="Surname"
+              aria-describedby="basic-addon1">
+          </div>
+        </div>
+      </div>
+
+      <!-- Company Name and Contact Number -->
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Company Name" aria-label="Company Name"
+              aria-describedby="basic-addon1">
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Contact Number" aria-label="Contact Number"
+              aria-describedby="basic-addon1">
+          </div>
+        </div>
+      </div>
+
+      <!-- Email and Department -->
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Email" aria-label="Email"
+              aria-describedby="basic-addon1">
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="input-group mb-3">
+            <select class="form-select" aria-label="Department">
+              <option selected>Department</option>
+              <option value="1">Sales</option>
+              <option value="2">Support</option>
+              <option value="3">Marketing</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Message -->
+      <div class="row">
+        <div class="col-12">
+          <div class="input-group mb-3">
+            <textarea class="form-control" placeholder="Message" aria-label="Message"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="row mt-4">
+        <div class="col-12 d-flex justify-content-center">
+          <button type="submit" class="btn btn-primary w-50 mx-auto">Submit</button>
+        </div>
+      </div>
+
+    </div>
+  </form>
+</section>
