@@ -5,6 +5,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  &__overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
   &__lets-talk {
     border-bottom: 2px solid;
     font-size: 30px;

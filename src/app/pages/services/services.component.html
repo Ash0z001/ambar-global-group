@@ -1,12 +1,18 @@
 <section class="services">
   <app-banner title="Services Page Banner Title" image="'https://dummyimage.com/1920x1080/000/000'"></app-banner>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
+  <app-single-column-text
+    heading="Our Services"
+    [descriptions]="[
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ligula vel sapien gravida tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ligula vel sapien gravida tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ligula vel sapien gravida tincidunt.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ligula vel sapien gravida tincidunt.'
+    ]"
+  ></app-single-column-text>
 
-      </div>
-    </div>
-  </div>
-
+  <app-two-column-text
+    leftColumnTitle="Left Column Title"
+    rightColumnTitle="Right Column Title"
+    leftColumn="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ligula vel sapien gravida tincidunt."
+    rightColumn="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ligula vel sapien gravida tincidunt."
+  ></app-two-column-text>
 </section>
