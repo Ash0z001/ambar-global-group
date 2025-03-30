@@ -1,0 +1,19 @@
+.two-column-text-image {
+    .img-fluid {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  
+    .text-image__title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #d35400;
+    }
+  
+    .text-image__description {
+      font-size: 1rem;
+      color: #333;
+    }
+  }
+  

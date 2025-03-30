@@ -24,6 +24,7 @@ import { ParallaxBannerComponent } from './components/parallax-banner/parallax-b
 import { TwoColumnTextComponent } from './components/two-column-text/two-column-text.component';
 import { SingleColumnTextComponent } from './components/single-column-text/single-column-text.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { TwoColumnTextImageComponent } from './components/two-column-text-image/two-column-text-image.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
     ParallaxBannerComponent,
     TwoColumnTextComponent,
     SingleColumnTextComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    TwoColumnTextImageComponent
   ],
   imports: [
     BrowserModule,
