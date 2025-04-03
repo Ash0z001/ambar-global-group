@@ -9,13 +9,13 @@
     </button>
     <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNavDropdown">
       <ul class="navbar-nav">
-        <li class="nav-item text-white m-5 hover-underline">
-          <a class="nav-link active" aria-current="page" [routerLink]="['home']" routerLinkActive="active">Home</a>
+        <li class="nav-item text-white m-5 hover-underline" [routerLink]="['home']" routerLinkActive="active">
+          <a class="nav-link" aria-current="page" [routerLink]="['home']" routerLinkActive="active">Home</a>
         </li>
-        <li class="nav-item m-5 hover-underline">
+        <li class="nav-item m-5 hover-underline" [routerLink]="['services']" routerLinkActive="active">
           <a class="nav-link" [routerLink]="['services']" routerLinkActive="active">Services</a>
         </li>
-        <li class="nav-item m-5 hover-underline">
+        <li class="nav-item m-5 hover-underline" [routerLink]="['contact']" routerLinkActive="active">
           <a class="nav-link" [routerLink]="['contact']" routerLinkActive="active">Contact</a>
         </li>
       </ul>

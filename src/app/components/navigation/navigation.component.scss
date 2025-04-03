@@ -97,13 +97,12 @@
     }
 
     &:hover::after,
-    &:hover::before {
+    &:hover::before,
+    &.active::after,
+    &.active::before {
         transform: scaleX(1);
     }
 
-    &.active::before {
-        display: none;
-    }
 
     &.active:hover::after {
         transform: scaleX(0);
