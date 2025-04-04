@@ -1,48 +1,37 @@
 <section class="home">
-  <app-banner title="Home Page Banner Title" image = "/assets/images/home.jpg" buttonText="Read more" buttonLink="https://google.com"></app-banner>
+  <app-banner title="Welcome to Ambar Global Group (AGG)" image="/assets/images/home.jpg" buttonText="Read more"
+    buttonLink="https://google.com"></app-banner>
 
-  <app-two-column-icons
-    title="Our Services"
-    description=""
-    [iconCards]="[
-      { icon: 'https://dummyimage.com/150x150/000/fff', title: 'Road Freight', description: 'Full Truckload (FTL) and Less Than Truckload (LTL) services<br>Cross-border transportation<br>Customized routes and scheduling<br>Timely and safe delivery of goods to urban and rural areas worldwide<br>Abnormal loads' },
-      { icon: 'https://dummyimage.com/150x150/000/fff', title: 'Air Freight', description: 'Expedited air cargo solutions for time-sensitive deliveries<br>Global air freight network with key airlines and cargo hubs<br>Door-to-door airfreight services, including customs clearance' },
-      { icon: 'https://dummyimage.com/150x150/000/fff', title: 'Sea Freight', description: 'Containerized shipping for bulk and general cargo<br>FCL (Full Container Load) and LCL (Less than Container Load) options<br>International sea freight services for global trade routes<br>Flexible scheduling, port handling, and customs services' },
-      { icon: 'https://dummyimage.com/150x150/000/fff', title: 'Warehousing Solutions', description: 'State-of-the-art warehousing facilities for short and long-term storage<br>Inventory management, order fulfilment, and pick-and-pack services<br>Cross-docking and distribution management services' }
-    ]"
-  ></app-two-column-icons>
-
-  <app-parallax-banner
-    title="Parallax Banner Title"
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ligula vel sapien gravida tincidunt."
+  <app-single-column-text heading="About Us" [descriptions]="[
+    'Ambar Global Group (AGG) is a leading global logistics provider that specializes in comprehensive transportation and warehousing services. With a strong international presence and a vast network of partners and resources, AGG is dedicated to optimizing the movement of goods across the globe.',
+    'Our core offerings include road freight, air freight, sea freight, and tailored warehousing solutions, designed to meet the diverse needs of businesses in every industry. We pride ourselves on delivering cost-effective, efficient, and reliable logistics services, leveraging state-of-the-art technology and a customer-centric approach to ensure the seamless flow of goods, no matter the size or destination.',
+    'Ambar Global Group (AGG) is a premier global logistics provider specializing in a wide range of transportation and warehousing services. With a robust international presence and a vast network of trusted partners, we are committed to optimizing the global movement of goods. Our comprehensive services include road freight, air freight, sea freight, and tailored warehousing solutions to meet the diverse needs of businesses across all industries. We pride ourselves on delivering cost-effective, reliable, and efficient logistics solutions, using advanced technology and a customer-focused approach to ensure the smooth and timely flow of goods worldwide.'
+  ]"></app-single-column-text>
+  <app-parallax-banner title="Global Presence"
+    description="Operating across multiple countries and continents, AGG has a broad network of partners, agents, and local warehouses to meet your logistics needs wherever you are and wherever your goods need to go."
     [imageUrl]="'/assets/images/banner.png'">
   </app-parallax-banner>
+
+  <app-two-column-text-image title="Our Values"
+    description="<ul class='bulleted-list'><li>Reliability: On-time, dependable delivery, regardless of transport mode.</li><li>Innovation: Constantly exploring new technologies and processes for enhanced efficiency.</li><li>Customer Focus: Understanding our customers' needs and providing tailored solutions to maximize value.</li></ul>"
+    image="/assets/images/our-values.jpg">
+  </app-two-column-text-image>
+
+
+  <!-- <app-two-column-text leftColumnTitle="Why Choose Us?" rightColumnTitle="Our Mission"
+    leftColumn="• End-to-End Solutions: Whether you're looking for road, air, or sea freight services, or need warehousing and inventory management, we can handle it all.<br>• Expertise and Experience: With decades of industry experience, AGG has the knowledge to navigate the complexities of global logistics.<br>• Flexible and Scalable: We offer scalable solutions that can grow with your business, ensuring flexibility and responsiveness to market changes."
+    rightColumn="To provide innovative and sustainable logistics solutions that connect businesses to the world, ensuring efficient, on-time, and secure transportation and warehousing services. We strive to enhance supply chain performance for our customers by offering customized, end-to-end solutions that meet their specific needs."></app-two-column-text> -->
 
   <div class="container">
     <div class="row">
       <div class="col-12">
 
       </div>
-      </div>
     </div>
-  <app-two-column-text-image
-  title="LOGISTICS SOLUTIONS"
-  description="Phoenix Fortitude specializes in cross-border road freight projects and sensitive cargo to Mozambique, Zimbabwe, Malawi, Botswana, and Namibia. We provide tailor-made logistics solutions with a registered Exporter (SADC) and Customs Clearing Agent."
-  image="/assets/images/services.png">
-</app-two-column-text-image>
+  </div>
 
-  <app-single-column-text
-    heading="About Us"
-    [descriptions]="[
-      'Ambar Global Group (AGG) is a leading global logistics provider that specializes in comprehensive transportation and warehousing services. With a strong international presence and a vast network of partners and resources, AGG is dedicated to optimizing the movement of goods across the globe.',
-      'Our core offerings include road freight, air freight, sea freight, and tailored warehousing solutions, designed to meet the diverse needs of businesses in every industry. We pride ourselves on delivering cost-effective, efficient, and reliable logistics services, leveraging state-of-the-art technology and a customer-centric approach to ensure the seamless flow of goods, no matter the size or destination.'
-    ]"
-  ></app-single-column-text>
 
-  <app-two-column-text
-    leftColumnTitle="Why Choose Us?"
-    rightColumnTitle="Our Mission"
-    leftColumn="• End-to-End Solutions: Whether you're looking for road, air, or sea freight services, or need warehousing and inventory management, we can handle it all.<br>• Expertise and Experience: With decades of industry experience, AGG has the knowledge to navigate the complexities of global logistics.<br>• Flexible and Scalable: We offer scalable solutions that can grow with your business, ensuring flexibility and responsiveness to market changes."
-    rightColumn="To provide innovative and sustainable logistics solutions that connect businesses to the world, ensuring efficient, on-time, and secure transportation and warehousing services. We strive to enhance supply chain performance for our customers by offering customized, end-to-end solutions that meet their specific needs."
-  ></app-two-column-text>
+
+
+
 </section>
