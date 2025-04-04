@@ -1,7 +1,7 @@
 .navbar {
     background-color: black;
     transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
-
+    position: relative;
     .navbar-brand {
         display: flex;
         align-items: center;
@@ -38,7 +38,8 @@
 .navbar.scrolled {
     padding: 5px 0;
     background-color: rgba(0, 0, 0, 0.9);
-
+    position: fixed;
+    
     .navbar-brand img {
         width: 100px;
         transform: scale(0.9);
