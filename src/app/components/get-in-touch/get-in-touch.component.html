@@ -3,16 +3,15 @@
   <div class="container position-relative h-100 z-2">
     <div class="row">
       <div class="offset-4 offset-lg-9 col-8 col-lg-3">
-        <div class="get-in-touch__content">
-          <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ligula vel
-            sapien gravida tincidunt.</p>
+        <div class="get-in-touch__content" data-aos="slide-up">
+          <p class="text-white">Whether you need road, air, or sea freight — or a complete warehousing solution — our global team is ready to support your logistics needs. Let's build a smarter supply chain together.</p>
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row get-in-touch__lets-talk-wrapper">
       <div class="col-12">
-        <a href="">
-          <div class="get-in-touch__lets-talk text-white d-flex align-items-end justify-content-between position-absolute bottom-0">
+        <a [routerLink]="['contact']">
+          <div class="get-in-touch__lets-talk d-flex align-items-end justify-content-between position-absolute bottom-0">
             LET'S TALK
             <i class="bi bi-arrow-up-short"></i>
           </div>

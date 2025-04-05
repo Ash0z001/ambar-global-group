@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import * as AOS from "aos"; //AOS - 1
 
 @Component({
   selector: 'app-two-column-text',
@@ -10,4 +11,14 @@ export class TwoColumnTextComponent {
   @Input() rightColumnTitle: string = '';
   @Input() leftColumn: string = '';
   @Input() rightColumn: string = '';
+
+  ngOnInit() {
+    AOS.init();
+  }
+
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      AOS.refresh();
+    }, 500);
+  }
 }

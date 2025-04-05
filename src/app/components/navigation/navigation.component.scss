@@ -3,68 +3,72 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(3.8px);
     -webkit-backdrop-filter: blur(3.8px);
-    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     position: relative;
-  
+
     .navbar-brand {
       display: flex;
       align-items: center;
-  
+
       img {
+        transition: width 0.3s ease-in-out;
         width: 120px;
       }
     }
-  
+
     .nav-link {
       color: #b3d8a6;
       transition: color 0.3s ease-in-out;
-  
+
       &:hover {
         color: #88d37b;
       }
-  
+
       &.active {
         color: #d0f0c0;
         font-weight: bold;
       }
     }
-  
+
     .navbar-toggler {
       border-color: #b3d8a6;
-  
+
       .navbar-toggler-icon {
         filter: invert(1);
       }
     }
   }
-  
-  .navbar.scrolled {
-    padding: 5px 0;
-    background: rgba(8, 35, 26, 0.85);
-    position: fixed;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-  
-    .navbar-brand img {
-      width: 120px;
+
+  .navbar {
+    &.scrolled {
+      padding: 5px 0;
+      background: rgba(8, 35, 26, 0.85);
+      position: fixed;
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+
+      .navbar-brand img {
+        transition: width 0.3s ease-in-out;
+        width: 70px;
+      }
     }
   }
-  
+
   .navbar-nav {
     .nav-item {
       a.nav-link {
         color: #b3d8a6;
         transition: color 0.3s ease-in-out;
         position: relative;
-  
+
         &:hover {
           color: #88d37b;
         }
-  
+
         &.active {
           color: #d0f0c0;
           font-weight: bold;
-  
+
           &::before {
             display: none;
           }
@@ -72,13 +76,13 @@
       }
     }
   }
-  
+
   .hover-underline {
     font-size: 18px;
     color: #b3d8a6;
     position: relative;
     display: inline-block;
-  
+
     &::after,
     &::before {
       content: '';
@@ -88,28 +92,27 @@
       background: linear-gradient(to right, #6fa3a1, #f1b22c, #3a5228);
       transition: transform 0.4s ease-out;
     }
-  
+
     &::before {
       top: -5px;
       transform: scaleX(0);
       transform-origin: left;
     }
-  
+
     &::after {
       bottom: -5px;
       transform: scaleX(0);
       transform-origin: right;
     }
-  
+
     &:hover::after,
     &:hover::before,
     &.active::after,
     &.active::before {
       transform: scaleX(1);
     }
-  
+
     &.active:hover::after {
       transform: scaleX(1);
     }
   }
-  

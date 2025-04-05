@@ -1,23 +1,46 @@
+@import "../../../styles.scss";
+
 .get-in-touch {
-  height: 450px;
+  height: 380px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: 1024px) {
+    height: 480px;
+  }
 
   &__overlay {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
   }
 
+  &__lets-talk-wrapper {
+    &:hover {
+      .get-in-touch__lets-talk {
+        border-color: $primary;
+
+        i {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  a {
+    color: #fff;
+  }
+
   &__lets-talk {
+    transition: all 0.3s ease;
     border-bottom: 2px solid;
     font-size: 30px;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
 
     @media (min-width: 1024px) {
       width: 100%;
