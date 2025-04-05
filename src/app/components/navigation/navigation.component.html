@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg fixed-top" [ngClass]="{ 'scrolled': isScrolled }">
+<nav class="navbar navbar-expand-lg fixed-top py-2" [ngClass]="{ 'scrolled': isScrolled }">
   <div class="container">
-    <a class="navbar-brand m-3" [routerLink]="['/']">
+    <a class="navbar-brand" [routerLink]="['/']">
       <img src="/assets/images/logo.png" alt="Logo" class="navbar-logo" [ngClass]="{ 'small-logo': isScrolled }">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -9,13 +9,13 @@
     </button>
     <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNavDropdown">
       <ul class="navbar-nav">
-        <li class="nav-item text-white m-5 hover-underline" [routerLink]="['home']" routerLinkActive="active">
+        <li class="nav-item text-white mx-5 hover-underline" [routerLink]="['home']" routerLinkActive="active">
           <a class="nav-link" aria-current="page" [routerLink]="['home']" routerLinkActive="active"  data-bs-target="#navbarNavDropdown" data-bs-toggle="collapse">Home</a>
         </li>
-        <li class="nav-item m-5 hover-underline" [routerLink]="['services']" routerLinkActive="active">
+        <li class="nav-item mx-5 hover-underline" [routerLink]="['services']" routerLinkActive="active">
           <a class="nav-link" [routerLink]="['services']" routerLinkActive="active"  data-bs-target="#navbarNavDropdown" data-bs-toggle="collapse">Services</a>
         </li>
-        <li class="nav-item m-5 hover-underline" [routerLink]="['contact']" routerLinkActive="active">
+        <li class="nav-item mx-5 hover-underline" [routerLink]="['contact']" routerLinkActive="active">
           <a class="nav-link" [routerLink]="['contact']" routerLinkActive="active"  data-bs-target="#navbarNavDropdown" data-bs-toggle="collapse">Contact</a>
         </li>
       </ul>

@@ -10,6 +10,6 @@ export class NavigationComponent {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.isScrolled = window.scrollY > 50;
+    this.isScrolled = window.scrollY > 120;
   }
 }

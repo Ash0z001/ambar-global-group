@@ -1,7 +1,26 @@
+@import "../../../styles.scss";
+
 .contact {
   ::ng-deep {
     .two-column-text {
       margin-top: 40px !important;
+
+      h3 {
+        color: $primary;
+      }
+    }
+
+    .contact-form {
+      margin-top: 40px !important;
+      background-color: #f8f9fa;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding-top: 40px;
+      padding-bottom: 40px;
+
+      @media (min-width: 1024px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
     }
   }
 }

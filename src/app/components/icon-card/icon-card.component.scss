@@ -1,0 +1,22 @@
+@import "../../../styles.scss";
+
+.icon-card {
+  transition: all 0.3s ease-in-out;
+
+  i {
+    font-size: 55px;
+    cursor: pointer;
+    color: $secondary;
+  }
+
+  // &:hover {
+  //   transform: scale(1.02);
+  //   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  //   background-color: $primary;
+  // }
+
+  &__description {
+    min-height: 150px;
+    height: 100%;
+  }
+}
