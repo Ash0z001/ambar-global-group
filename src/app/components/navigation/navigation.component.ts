@@ -6,23 +6,24 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent {
-  isScrolled: boolean = false;
-  isHidden: boolean = false;
-  private lastScrollTop: number = 0;
+  private lastScrollTop = 0;
+  public isNavbarHidden = false;
+  public isScrolled = false;
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    const currentScroll = window.scrollY;
-    this.isScrolled = currentScroll > 50;
+    const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (currentScroll > this.lastScrollTop && currentScroll > 50) {
+    this.isScrolled = window.scrollY > 50; // Adjust the scroll threshold as needed
+
+    if (currentScrollTop > this.lastScrollTop) {
       // Scrolling down
-      this.isHidden = true;
-    } else if (currentScroll < this.lastScrollTop) {
+      this.isNavbarHidden = true;
+    } else {
       // Scrolling up
-      this.isHidden = false;
+      this.isNavbarHidden = false;
     }
 
-    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Avoid negative values
+    this.lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For mobile or negative scrolling
   }
 }
