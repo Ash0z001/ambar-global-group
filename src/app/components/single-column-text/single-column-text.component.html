@@ -4,7 +4,7 @@
       <div class="col-12">
         <div class="single-column-text" data-aos="slide-up">
           <h2 class="mb-3 text-center fw-bold heading">{{ heading }}</h2>
-          <p class="text-center" *ngFor="let description of descriptions">{{ description }}</p>
+          <p class="text-start" *ngFor="let description of descriptions" [innerHTML]="description"></p>
         </div>
       </div>
     </div>

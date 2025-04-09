@@ -1,41 +1,34 @@
 <section class="services">
   <app-banner title="Our Services" image="/assets/images/our-service.jpg"></app-banner>
 
-  <!-- <app-two-column-text
-  leftColumnTitle="Why Choose Us?"
-  rightColumnTitle="Our Mission"
-  leftColumn="• End-to-End Solutions: Whether you're looking for road, air, or sea freight services, or need warehousing and inventory management, we can handle it all.<br>
-                • Expertise and Experience: With decades of industry experience, AGG has the knowledge to navigate the complexities of global logistics.<br>
-                • Flexible and Scalable: We offer scalable solutions that can grow with your business, ensuring flexibility and responsiveness to market changes."
-  rightColumn="To provide innovative and sustainable logistics solutions that connect businesses to the world, ensuring efficient, on-time, and secure transportation and warehousing services. We strive to enhance supply chain performance for our customers by offering customized, end-to-end solutions that meet their specific needs."
-></app-two-column-text> -->
-
-<app-single-column-text heading="Why Choose Us?" [descriptions]="[
-'To provide innovative and sustainable logistics solutions that connect businesses to the world, ensuring efficient, on-time, and secure transportation and warehousing services. We strive to enhance supply chain performance for our customers by offering customized, end-to-end solutions that meet their specific needs.'
+  <app-single-column-text heading="Why Choose Us?" [descriptions]="[
+  '<p><strong>End-to-End Solutions:</strong> Whether you\'re looking for road, air, or sea freight services, or need warehousing and inventory management, we can handle it all.</p>',
+  '<p><strong>Expertise and Experience:</strong> With decades of industry experience, AGG has the knowledge to navigate the complexities of global logistics.</p>',
+  '<p><strong>Flexible and Scalable:</strong> We offer scalable solutions that can grow with your business, ensuring flexibility and responsiveness to market changes.</p>'
 ]"></app-single-column-text>
 
-
-  <app-two-column-icons
-  title="Services offered"
-  description=""
-  [iconCards]="[
-    { icon: 'fa-truck', title: 'Road Freight', description: 'Full Truckload (FTL) and Less Than Truckload (LTL) services<br>Cross-border transportation<br>Customized routes and scheduling<br>Timely and safe delivery of goods to urban and rural areas worldwide<br>Abnormal loads' },
-    { icon: 'fa-plane', title: 'Air Freight', description: 'Expedited air cargo solutions for time-sensitive deliveries<br>Global air freight network with key airlines and cargo hubs<br>Door-to-door airfreight services, including customs clearance' },
-    { icon: 'fa-ship', title: 'Sea Freight', description: 'Containerized shipping for bulk and general cargo<br>FCL (Full Container Load) and LCL (Less than Container Load) options<br>International sea freight services for global trade routes<br>Flexible scheduling, port handling, and customs services' },
-    { icon: 'fa-building', title: 'Warehousing Solutions', description: 'State-of-the-art warehousing facilities for short and long-term storage<br>Inventory management, order fulfilment, and pick-and-pack services<br>Cross-docking and distribution management services' }
-  ]"
-></app-two-column-icons>
-
-  <!-- <app-single-column-text
-    heading="Our Services"
-    [descriptions]="[
-      'Road Freight: Full Truckload (FTL) and Less Than Truckload (LTL) services, cross-border transportation, customized routes and scheduling, timely and safe delivery of goods to urban and rural areas worldwide, abnormal loads.',
-      'Air Freight: Expedited air cargo solutions for time-sensitive deliveries, global air freight network with key airlines and cargo hubs, door-to-door airfreight services, including customs clearance.',
-      'Sea Freight: Containerized shipping for bulk and general cargo, FCL (Full Container Load) and LCL (Less than Container Load) options, international sea freight services for global trade routes, flexible scheduling, port handling, and customs services.',
-      'Warehousing Solutions: State-of-the-art warehousing facilities for short and long-term storage, inventory management, order fulfilment, and pick-and-pack services, cross-docking and distribution management services.'
-    ]"
-  ></app-single-column-text> -->
-
+<app-two-column-icons title="Services offered" description="" [iconCards]="[
+  {
+    icon: 'fa-truck',
+    title: 'Road Freight',
+    description: '<p>Full Truckload (FTL) and Less Than Truckload (LTL) services</p><p>Cross-border transportation</p><p>Customized routes and scheduling</p><p>Timely and safe delivery of goods to urban and rural areas worldwide</p><p>Abnormal loads</p>'
+  },
+  {
+    icon: 'fa-plane',
+    title: 'Air Freight',
+    description: '<p>Expedited air cargo solutions for time-sensitive deliveries</p><p>Global air freight network with key airlines and cargo hubs</p><p>Door-to-door airfreight services, including customs clearance</p>'
+  },
+  {
+    icon: 'fa-ship',
+    title: 'Sea Freight',
+    description: '<p>Containerized shipping for bulk and general cargo</p><p>FCL (Full Container Load) and LCL (Less than Container Load) options</p><p>International sea freight services for global trade routes</p><p>Flexible scheduling, port handling, and customs services</p>'
+  },
+  {
+    icon: 'fa-building',
+    title: 'Warehousing Solutions',
+    description: '<p>State-of-the-art warehousing facilities for short and long-term storage</p><p>Inventory management, order fulfilment, and pick-and-pack services</p><p>Cross-docking and distribution management services</p>'
+  }
+]"></app-two-column-icons>
 
 
 </section>
