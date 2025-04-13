@@ -10,7 +10,7 @@ export const environment = {
     databaseURL: "https://anime-verse-online-default-rtdb.europe-west1.firebasedatabase.app",
     measurementId: "G-CYBY83KCYP"
   },
-  YOUR_SERVICE_ID: '',
-  YOUR_TEMPLATE_ID: '',
-  YOUR_PUBLIC_KEY: ''
+  YOUR_SERVICE_ID: 'service_cbgsubc',
+  YOUR_TEMPLATE_ID: 'template_lv12czr',
+  YOUR_PUBLIC_KEY: '5oF1s9L6MgbImLa_8'
 }
